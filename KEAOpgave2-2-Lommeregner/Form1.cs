@@ -51,6 +51,14 @@ namespace KEAOpgave2_2_Lommeregner
             labelResult.Text = Convert.ToString(result); // Konvertere 'res' til en string så den kan smækkes ind i 'labelResult'
         }
 
+        private void buttonClear_Click(object sender, EventArgs e)
+        {
+            labelResult.Text = "";
+            textBoxTalA.Text = "";
+            textBoxTalB.Text = "";
+
+        }
+
         private void buttonMinus_Click(object sender, EventArgs e)
         {
             try
