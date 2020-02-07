@@ -16,5 +16,10 @@ namespace KEAOpgave2_2_Lommeregner
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
