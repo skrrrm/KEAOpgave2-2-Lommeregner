@@ -37,7 +37,6 @@
             this.buttonMinus = new System.Windows.Forms.Button();
             this.buttonMultiply = new System.Windows.Forms.Button();
             this.buttonDivide = new System.Windows.Forms.Button();
-            this.buttonResult = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // labelTitle
@@ -58,7 +57,6 @@
             this.labelVejledning.Size = new System.Drawing.Size(229, 25);
             this.labelVejledning.TabIndex = 1;
             this.labelVejledning.Text = "Indtast ét tal i hver box";
-            this.labelVejledning.Click += new System.EventHandler(this.label2_Click);
             // 
             // buttonPlus
             // 
@@ -68,6 +66,7 @@
             this.buttonPlus.TabIndex = 2;
             this.buttonPlus.Text = "+";
             this.buttonPlus.UseVisualStyleBackColor = true;
+            this.buttonPlus.Click += new System.EventHandler(this.buttonPlus_Click);
             // 
             // textBoxTalA
             // 
@@ -99,6 +98,7 @@
             this.buttonMinus.TabIndex = 6;
             this.buttonMinus.Text = "-";
             this.buttonMinus.UseVisualStyleBackColor = true;
+            this.buttonMinus.Click += new System.EventHandler(this.buttonMinus_Click);
             // 
             // buttonMultiply
             // 
@@ -108,6 +108,7 @@
             this.buttonMultiply.TabIndex = 7;
             this.buttonMultiply.Text = "*";
             this.buttonMultiply.UseVisualStyleBackColor = true;
+            this.buttonMultiply.Click += new System.EventHandler(this.buttonMultiply_Click);
             // 
             // buttonDivide
             // 
@@ -117,23 +118,13 @@
             this.buttonDivide.TabIndex = 8;
             this.buttonDivide.Text = "/";
             this.buttonDivide.UseVisualStyleBackColor = true;
-            // 
-            // buttonResult
-            // 
-            this.buttonResult.Location = new System.Drawing.Point(492, 299);
-            this.buttonResult.Name = "buttonResult";
-            this.buttonResult.Size = new System.Drawing.Size(52, 37);
-            this.buttonResult.TabIndex = 9;
-            this.buttonResult.Text = "=";
-            this.buttonResult.UseVisualStyleBackColor = true;
-            this.buttonResult.Click += new System.EventHandler(this.button1_Click);
+            this.buttonDivide.Click += new System.EventHandler(this.buttonDivide_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.buttonResult);
             this.Controls.Add(this.buttonDivide);
             this.Controls.Add(this.buttonMultiply);
             this.Controls.Add(this.buttonMinus);
@@ -161,7 +152,6 @@
         private System.Windows.Forms.Button buttonMinus;
         private System.Windows.Forms.Button buttonMultiply;
         private System.Windows.Forms.Button buttonDivide;
-        private System.Windows.Forms.Button buttonResult;
     }
 }
 
